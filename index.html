@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/128/6500/6500779.png"
+    />
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+    <form action="/response.html" target="_blank">
+      <fieldset style="width: 520px">
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label>First Name</label></td>
+            <td>
+              <input
+                type="text"
+                name="FN"
+                placeholder="Ex:Mathy"
+                size="20"
+                required
+              /><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Surename</label></td>
+            <td>
+              <input type="text" name="LN" placeholder="Ex:Murugan" size="20" />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Mobile Number</label></td>
+            <td>
+              <input
+                type="text"
+                name="mob"
+                placeholder="Ex: 744-838-6669"
+                size="20"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Email</label></td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                placeholder="Ex:mathy@gmail.com"
+                size="20"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Password</label></td>
+            <td>
+              <input
+                type="password"
+                name="pass"
+                placeholder="min 5 characters"
+                size="20"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label> Conform Password</label></td>
+            <td>
+              <input
+                type="password"
+                name="conpass"
+                placeholder="min 5 characters"
+                size="20"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>DOB</label></td>
+            <td><input type="date" name="dob" required /></td>
+          </tr>
+          <tr>
+            <td><label>Gender</label></td>
+            <td>
+              <input type="radio" name="gender" value="M" /><label>Male</label
+              ><input type="radio" name="gender" value="F" /><label
+                >Female</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label>Select Country</label></td>
+            <td>
+              <select name="country">
+                <option value="select">--select country--</option>
+                <option value="India">INDIA</option>
+                <option value="usa">USA</option>
+                <option value="china">CHINA</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Upload Picture</label></td>
+            <td><input type="file" name="pic" /></td>
+          </tr>
+          <tr>
+            <td><input type="reset" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset style="width: 520px">
+        <legend>Course Details</legend>
+        <table>
+          <tr>
+            <td><label>Select Course</label></td>
+            <td>
+              <select name="course">
+                <option value="jfswd">Java Full Stack</option>
+                <option value="pfswd">Python Full Stack</option>
+                <option value="data science">Data Science</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Mode</label></td>
+            <td>
+              <input type="checkbox" name="mode1" value="online" />Online<input
+                type="checkbox"
+                name="mode2"
+                value="offline"
+              />Offline
+            </td>
+          </tr>
+        </table>
+        <label>Comments</label><br />
+        <textarea rows="5" cols="50"></textarea>
+      </fieldset>
+      <br />
+      <input type="submit" width="30" height="40" />
+    </form>
+  </body>
+</html>
